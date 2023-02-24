@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:ott_demo/provider/app_provider.dart';
 import 'package:ott_demo/utils/exports/common_exports.dart';
@@ -18,10 +19,20 @@ class MyApp extends StatelessWidget {
         theme: AppTheme.theme,
         themeMode: ThemeMode.light,
         debugShowCheckedModeBanner: false,
+        scrollBehavior: MyCustomScrollBehavior(),
         navigatorKey: NavigationService.navigatorKey,
         initialRoute: Routes.homeScreen,
         onGenerateRoute: NavigationService().generateRoute,
       ),
     );
   }
+}
+
+class MyCustomScrollBehavior extends MaterialScrollBehavior {
+  // Override behavior methods and getters like dragDevices
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+        PointerDeviceKind.touch,
+        PointerDeviceKind.mouse,
+      };
 }

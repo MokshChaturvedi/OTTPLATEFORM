@@ -2,11 +2,11 @@ import 'package:ott_demo/utils/exports/common_exports.dart';
 
 class AppProvider extends ChangeNotifier {
   final List<String> tabs = [
-    "home",
-    "movie",
-    "series",
-    "screen4",
-    "screen5",
+    "Home",
+    "Movie",
+    "Series",
+    "My Favourite Show",
+    "Subscriptions",
   ];
-  ValueNotifier<String> currentTab = ValueNotifier("home");
+  ValueNotifier<String> currentTab = ValueNotifier("Home");
 }

@@ -5,7 +5,7 @@ export 'dart:collection';
 export 'package:flutter/services.dart';
 export 'package:flutter/cupertino.dart' hide Flow;
 export 'package:ott_demo/utils/routes.dart';
-export 'package:ott_demo/screens/home_screen.dart';
+export 'package:ott_demo/screens/Home/home_screen.dart';
 export 'package:ott_demo/utils/app_extensions.dart';
 export 'package:flutter/material.dart' hide RefreshCallback, Flow;
 export 'package:ott_demo/utils/constants/common.dart';
