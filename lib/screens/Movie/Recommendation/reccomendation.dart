@@ -1,3 +1,5 @@
+import 'package:ott_demo/screens/Movie/Recommendation/dialogBox.dart';
+import 'package:ott_demo/screens/Movie/Recommendation/watchOnline.dart';
 import 'package:ott_demo/screens/Movie/Recommendation/videoPlayer.dart';
 import 'package:ott_demo/utils/exports/common_exports.dart';
 import 'package:readmore/readmore.dart';
@@ -175,6 +177,93 @@ class Reccomendation extends StatelessWidget {
                               ],
                             ),
                           ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 20.0, top: 15),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    ElevatedButton(
+                                      child: GestureDetector(
+                                        onTap: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      ChewieDemo()));
+                                        },
+                                        child: const Text('Watch Online',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w500,
+                                                fontSize: 15,
+                                                wordSpacing: 2.0)),
+                                      ),
+                                      style: ElevatedButton.styleFrom(
+                                        primary: Colors.green,
+                                        textStyle: const TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 10,
+                                            fontStyle: FontStyle.normal),
+                                      ),
+                                      onPressed: () {
+                                        log("messagemessagemessage");
+                                      },
+                                    ),
+                                    const SizedBox(
+                                      width: 30,
+                                    ),
+                                    ElevatedButton(
+                                      child: GestureDetector(
+                                          onTap: () {},
+                                          child: TextButton(
+                                            onPressed: () => showDialog<String>(
+                                              context: context,
+                                              builder: (BuildContext context) =>
+                                                  AlertDialog(
+                                                title: const Text(
+                                                    'Watch here trailer'),
+                                                content: SizedBox(
+                                                    height: 1400,
+                                                    width: 1600,
+                                                    child: TrailerVideo()),
+                                                actions: <Widget>[
+                                                  TextButton(
+                                                    onPressed: () =>
+                                                        Navigator.pop(
+                                                            context, 'Cancel'),
+                                                    child: const Text('Cancel'),
+                                                  ),
+                                                  TextButton(
+                                                    onPressed: () =>
+                                                        Navigator.pop(
+                                                            context, 'OK'),
+                                                    child: const Text('OK'),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            child: const Text(
+                                              'Watch Trailers',
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontStyle: FontStyle.normal),
+                                            ),
+                                          )),
+                                      style: ElevatedButton.styleFrom(
+                                        primary: Colors.blue,
+                                        textStyle: const TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 10,
+                                            fontStyle: FontStyle.normal),
+                                      ),
+                                      onPressed: () {},
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -240,61 +329,11 @@ class Reccomendation extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            // Padding(
-                            //   padding: const EdgeInsets.only(left: 20.0),
-                            //   child: Row(
-                            //     children: const [
-                            //       Text(
-                            //         "STRANGERS THINGS",
-                            //         style: TextStyle(
-                            //             color: Colors.white, fontSize: 30),
-                            //       )
-                            //     ],
-                            //   ),
-                            // ),
                           ],
                         ),
                       ),
                     ),
                   );
-                  // Padding(
-                  //     padding: const EdgeInsets.all(8.0),
-                  //     child: Column(
-                  //       children: [
-                  //         InkWell(
-                  //           child: Container(
-                  //             height: 180,
-                  //             width: 350,
-                  //             decoration: BoxDecoration(
-                  //                 image: const DecorationImage(
-                  //                   image: NetworkImage(
-                  //                       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL8EYmyUxMaTyGvkgUIg9ygsM6CD6A7QaxLtzD4k5kNhhUc1egbshslkm2VcEnX8CJO2Y&usqp=CAU"),
-                  //                   fit: BoxFit.fill,
-                  //                 ),
-                  //                 border: Border.all(
-                  //                     color: const Color.fromARGB(
-                  //                         255, 239, 235, 235),
-                  //                     width: 2.0,
-                  //                     style: BorderStyle.solid),
-                  //                 borderRadius: const BorderRadius.all(
-                  //                   Radius.circular(10),
-                  //                 ),
-                  //                 boxShadow: [
-                  //                   BoxShadow(
-                  //                     color: const Color.fromARGB(
-                  //                             255, 145, 143, 143)
-                  //                         .withOpacity(0.2),
-                  //                     spreadRadius: 5,
-                  //                     blurRadius: 5,
-                  //                     offset: const Offset(0,
-                  //                         0), // changes x,y position of shadow
-                  //                   ),
-                  //                 ],
-                  //                 shape: BoxShape.rectangle),
-                  //           ),
-                  //         ),
-                  //       ],
-                  //     ));
                 },
               ),
             ),

@@ -1,5 +1,14 @@
-2023/02/24-16:28:20.995 1e2471 Reusing MANIFEST /tmp/flutter_tools.NSDOIC/flutter_tools_chrome_device.QFXGZK/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/02/24-16:28:20.996 1e2471 Recovering log #14
-2023/02/24-16:28:21.004 1e2471 Reusing old log /tmp/flutter_tools.NSDOIC/flutter_tools_chrome_device.QFXGZK/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000014.log 
-2023/02/24-16:28:21.004 1e2471 Delete type=2 #12
-2023/02/24-16:28:21.004 1e2471 Delete type=0 #10
+2023/02/27-15:22:21.743 3dfb60 Reusing MANIFEST /tmp/flutter_tools.ZPPGGH/flutter_tools_chrome_device.DHLBDA/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/02/27-15:22:21.744 3dfb60 Recovering log #14
+2023/02/27-15:22:21.873 3dfb60 Reusing old log /tmp/flutter_tools.ZPPGGH/flutter_tools_chrome_device.DHLBDA/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000014.log 
+2023/02/27-15:22:21.873 3dfb60 Delete type=2 #12
+2023/02/27-15:22:21.873 3dfb60 Delete type=0 #10
+2023/02/27-18:33:44.473 3ee6ef Level-0 table #20: started
+2023/02/27-18:33:44.494 3ee6ef Level-0 table #20: 1020050 bytes OK
+2023/02/27-18:33:44.498 3ee6ef Delete type=0 #14
+2023/02/27-18:41:14.413 3ef06c Compacting 1@1 + 1@2 files
+2023/02/27-18:41:14.424 3ef06c Generated table #21@1: 473 keys, 25727 bytes
+2023/02/27-18:41:14.424 3ef06c Compacted 1@1 + 1@2 files => 25727 bytes
+2023/02/27-18:41:14.426 3ef06c compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/02/27-18:41:14.426 3ef06c Delete type=2 #20
+2023/02/27-18:41:14.426 3ef06c Delete type=2 #17
