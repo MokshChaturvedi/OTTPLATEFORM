@@ -1,35 +1,18 @@
-2023/02/27-12:06:44.043 3 Reusing MANIFEST /tmp/flutter_tools.ZPPGGH/flutter_tools_chrome_device.DHLBDA/Default/Session Storage/MANIFEST-000001
-2023/02/27-12:06:44.049 3 Recovering log #170
-2023/02/27-12:06:44.054 3 Reusing old log /tmp/flutter_tools.ZPPGGH/flutter_tools_chrome_device.DHLBDA/Default/Session Storage/000170.log 
-2023/02/27-12:06:44.061 3 Delete type=0 #166
-2023/02/27-12:06:44.062 3 Delete type=2 #108
-2023/02/27-12:06:44.062 3 Delete type=2 #26
-2023/02/27-12:06:44.062 3 Delete type=0 #6
-2023/02/27-12:06:44.062 3 Delete type=0 #24
-2023/02/27-12:06:44.062 3 Delete type=0 #110
-2023/02/27-12:06:44.062 3 Delete type=2 #111
-2023/02/27-12:06:44.062 3 Delete type=0 #106
-2023/02/27-12:06:44.062 3 Delete type=0 #113
-2023/02/27-12:06:44.062 3 Delete type=2 #7
-2023/02/27-12:06:44.063 3 Delete type=2 #114
-2023/02/27-17:02:26.688 3a Level-0 table #173: started
-2023/02/27-17:02:26.693 3a Level-0 table #173: 16993 bytes OK
-2023/02/27-17:02:26.699 3a Delete type=0 #170
-2023/02/27-18:41:14.361 61 Level-0 table #175: started
-2023/02/27-18:41:14.377 61 Level-0 table #175: 16161 bytes OK
-2023/02/27-18:41:14.382 61 Delete type=0 #172
-2023/02/27-18:41:14.388 61 Compacting 4@0 + 1@1 files
-2023/02/27-18:41:14.395 61 Generated table #176@0: 1442 keys, 33810 bytes
-2023/02/27-18:41:14.395 61 Compacted 4@0 + 1@1 files => 33810 bytes
-2023/02/27-18:41:14.397 61 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/02/27-18:41:14.398 61 Delete type=2 #169
-2023/02/27-18:41:14.398 61 Delete type=2 #167
-2023/02/27-18:41:14.398 61 Delete type=2 #173
-2023/02/27-18:41:14.398 61 Delete type=2 #165
-2023/02/27-18:41:14.398 61 Delete type=2 #175
-2023/02/27-18:50:53.887 61 Level-0 table #178: started
-2023/02/27-18:50:53.892 61 Level-0 table #178: 18912 bytes OK
-2023/02/27-18:50:53.920 61 Delete type=0 #174
-2023/02/27-18:53:21.455 61 Level-0 table #180: started
-2023/02/27-18:53:21.458 61 Level-0 table #180: 16596 bytes OK
-2023/02/27-18:53:21.461 61 Delete type=0 #177
+2023/02/28-10:53:03.253 3 Reusing MANIFEST /tmp/flutter_tools.KDVPSO/flutter_tools_chrome_device.CBMRDU/Default/Session Storage/MANIFEST-000001
+2023/02/28-10:53:03.254 3 Recovering log #179
+2023/02/28-10:53:03.255 3 Reusing old log /tmp/flutter_tools.KDVPSO/flutter_tools_chrome_device.CBMRDU/Default/Session Storage/000179.log 
+2023/02/28-10:53:03.256 3 Delete type=0 #166
+2023/02/28-10:53:03.256 3 Delete type=2 #169
+2023/02/28-10:53:03.256 3 Delete type=2 #108
+2023/02/28-10:53:03.256 3 Delete type=2 #167
+2023/02/28-10:53:03.256 3 Delete type=2 #26
+2023/02/28-10:53:03.256 3 Delete type=0 #6
+2023/02/28-10:53:03.256 3 Delete type=0 #24
+2023/02/28-10:53:03.256 3 Delete type=0 #110
+2023/02/28-10:53:03.256 3 Delete type=0 #170
+2023/02/28-10:53:03.256 3 Delete type=2 #165
+2023/02/28-10:53:03.256 3 Delete type=2 #111
+2023/02/28-10:53:03.256 3 Delete type=0 #106
+2023/02/28-10:53:03.256 3 Delete type=0 #113
+2023/02/28-10:53:03.256 3 Delete type=2 #7
+2023/02/28-10:53:03.256 3 Delete type=2 #114

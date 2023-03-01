@@ -1,4 +1,4 @@
-import 'package:ott_demo/screens/Movie/Recommendation/reccomendation.dart';
+import 'package:ott_demo/screens/Movie/recommendation/reccomendation.dart';
 import 'package:ott_demo/utils/exports/common_exports.dart';
 
 class Movie extends StatelessWidget {
