@@ -1,4 +1,7 @@
-#Tue Feb 21 12:31:37 IST 2023
-base.0=/home/cis/Documents/flutter projects/R&D/ott_demo/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Thu Mar 02 19:39:01 IST 2023
+base.1=/home/cis/Pictures/selfGIT/OTTPLATEFORM/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
+path.1=classes2.dex
+base.0=/home/cis/Pictures/selfGIT/OTTPLATEFORM/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex

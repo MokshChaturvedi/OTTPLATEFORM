@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "lib/screens/tabletView/movie/reccomendation_section/reccomendation",
+        "lib/screens/tabletView/movie/reccomendation_section"
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic"
+}

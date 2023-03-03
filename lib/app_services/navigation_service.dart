@@ -1,3 +1,4 @@
+import 'package:ott_demo/screens/tabletView/homeScreen/home_screen_tablet.dart';
 import 'package:ott_demo/utils/exports/common_exports.dart';
 
 class NavigationService {
@@ -29,8 +30,8 @@ class NavigationService {
 
   Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Routes.homeScreen:
-        return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case Routes.HomeScreentablet:
+        return MaterialPageRoute(builder: (_) => const HomeScreentablet());
 
       default:
         return MaterialPageRoute(

@@ -10,7 +10,20 @@ class Reccomendation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(0, 4, 25, 51),
+      appBar: AppBar(
+        backgroundColor: Colors.lightBlue[200],
+        elevation: 0.0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: const Text(
+          "Stranger Things",
+          style: TextStyle(color: Colors.black, fontSize: 20),
+        ),
+        centerTitle: false,
+      ),
+      // backgroundColor: const Color.fromARGB(0, 4, 25, 51),
       body: SingleChildScrollView(
         child: Column(
           children: [

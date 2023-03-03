@@ -1,9 +1,15 @@
+import 'package:ott_demo/provider/actorsProvider.dart';
+import 'package:ott_demo/screens/Movie/recommendation/animation.dart';
+import 'package:ott_demo/screens/Movie/recommendation/gridview.dart';
 import 'package:ott_demo/screens/Movie/recommendation/reccomendation.dart';
 import 'package:ott_demo/utils/exports/common_exports.dart';
 
 class Movie extends StatelessWidget {
+  // ActorsProvider? actorsProvider;
   @override
   Widget build(BuildContext context) {
+    // String sourceUrl =
+    //     (actorsProvider!.actors != null) ? actorsProvider!.actors!.image : '';
     return Scaffold(
         backgroundColor: Colors.white,
         body: Padding(
@@ -75,13 +81,17 @@ class Movie extends StatelessWidget {
                                     child: Row(
                                       children: [
                                         Column(
-                                          children: [Icon(Icons.favorite)],
+                                          children: const [
+                                            Icon(Icons.favorite)
+                                          ],
                                         ),
                                         const SizedBox(
                                           width: 200,
                                         ),
                                         Column(
-                                          children: [Text("Washington D.C.")],
+                                          children: const [
+                                            Text("Washington D.C.")
+                                          ],
                                         ),
                                       ],
                                     ),
@@ -100,66 +110,87 @@ class Movie extends StatelessWidget {
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 15.0),
-                    child: SizedBox(
-                      height: 650,
-                      child: GridView.builder(
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 4,
-                          childAspectRatio: 1.65 / 1.1,
+                  const Padding(
+                    padding: EdgeInsets.only(bottom: 15.0),
+                    child: SizedBox(height: 650, child: DemoPage()
+                        // GridView.builder(
+                        //   gridDelegate:
+                        //       const SliverGridDelegateWithFixedCrossAxisCount(
+                        //     crossAxisCount: 4,
+                        //     childAspectRatio: 1.65 / 1.1,
+                        //   ),
+                        //   itemCount: 50,
+                        //   itemBuilder: (BuildContext context, int index) {
+                        //     return Padding(
+                        //       padding: const EdgeInsets.all(8.0),
+                        //       child: GestureDetector(
+                        //         onTap: () {
+                        //           // Navigator.push(
+                        //           //     context,
+                        //           //     MaterialPageRoute(
+                        //           //         builder: (context) =>
+                        //           //             const TransitionsHomePage()));
+                        //         },
+                        //         child: Column(
+                        //           children: [
+                        //             InkWell(
+                        //               borderRadius: const BorderRadius.only(),
+                        //               onTap: () {},
+                        //               child: Container(
+                        //                 height: 200,
+                        //                 width: 500,
+                        //                 decoration: BoxDecoration(
+                        //                     image: const DecorationImage(
+                        //                       image: NetworkImage(
+                        //                           "https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg"),
+                        //                       fit: BoxFit.fill,
+                        //                     ),
+                        //                     border: Border.all(
+                        //                         color: const Color(0xFF000000),
+                        //                         width: 2.0,
+                        //                         style: BorderStyle.solid),
+                        //                     borderRadius: const BorderRadius.all(
+                        //                       Radius.circular(10),
+                        //                     ),
+                        //                     shape: BoxShape.rectangle),
+                        //               ),
+                        //             ),
+                        //             Padding(
+                        //               padding: const EdgeInsets.all(8.0),
+                        //               child: Row(
+                        //                 children: [
+                        //                   Column(
+                        //                     children: const [
+                        //                       Icon(Icons.favorite_border)
+                        //                     ],
+                        //                   ),
+                        //                   const SizedBox(
+                        //                     width: 210,
+                        //                   ),
+                        //                   Column(
+                        //                     children: [
+                        //                       GestureDetector(
+                        //                           onTap: () {
+                        //                             Navigator.push(
+                        //                                 context,
+                        //                                 MaterialPageRoute(
+                        //                                     builder: (context) =>
+                        //                                         const TransitionsHomePage()));
+                        //                           },
+                        //                           child: const Text(
+                        //                               "Upcoming Movies"))
+                        //                     ],
+                        //                   ),
+                        //                 ],
+                        //               ),
+                        //             ),
+                        //           ],
+                        //         ),
+                        //       ),
+                        //     );
+                        //   },
+                        // ),
                         ),
-                        itemCount: 50,
-                        itemBuilder: (BuildContext context, int index) {
-                          return Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              children: [
-                                InkWell(
-                                  borderRadius: const BorderRadius.only(),
-                                  onTap: () => print('Go to with series'),
-                                  child: Container(
-                                    height: 200,
-                                    width: 500,
-                                    decoration: BoxDecoration(
-                                        image: const DecorationImage(
-                                          image: NetworkImage(
-                                              "https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg"),
-                                          fit: BoxFit.fill,
-                                        ),
-                                        border: Border.all(
-                                            color: const Color(0xFF000000),
-                                            width: 2.0,
-                                            style: BorderStyle.solid),
-                                        borderRadius: const BorderRadius.all(
-                                          Radius.circular(10),
-                                        ),
-                                        shape: BoxShape.rectangle),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Row(
-                                    children: [
-                                      Column(
-                                        children: [Icon(Icons.favorite_border)],
-                                      ),
-                                      const SizedBox(
-                                        width: 210,
-                                      ),
-                                      Column(
-                                        children: [Text("Upcoming Movies")],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          );
-                        },
-                      ),
-                    ),
                   ),
                   const Padding(
                     padding: EdgeInsets.only(top: 10),
